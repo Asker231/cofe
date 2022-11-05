@@ -13,12 +13,8 @@
     border-radius: 4px;
 
 
-}.card:hover{
-    -webkit-box-shadow: 2px 6px 21px 0px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 2px 6px 21px 0px rgba(66, 68, 90, 1);
-    box-shadow: 2px 6px 21px 0px rgba(66, 68, 90, 1);
 }
 .card>img{
-   width: 90%;
+   width: 80%;
    
 }

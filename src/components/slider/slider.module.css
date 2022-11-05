@@ -6,6 +6,7 @@
   justify-content:space-around;
   padding: 20px;
   z-index: 3;
+  top: 100px;
 
   /*
   при разрешении 481px убрать высоту в 70vmin
@@ -90,7 +91,7 @@
     position: absolute;
     z-index: 1;
     top: 10px;
-    right: -200px;
+
    }
 }
 

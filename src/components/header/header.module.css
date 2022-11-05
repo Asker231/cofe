@@ -1,18 +1,20 @@
 .header{
     display: flex;
     width: 100%;
-    position: relative;
+    position: fixed;
     align-items: center;
     justify-content: space-around;
-    padding: 20px ;
+    padding: 10px 5px 5px 5px;
     z-index: 10;
+    background-color: #fff;
     gap: 10px;
     box-shadow: 0px 5px 20px rgba(157, 157, 157, 0.25);
 }
-.logo>img{
+.logo>a>img{
     width: 100%;
     height: 116px;
 }
+
 .search{
     display: flex;
     align-items: center;
@@ -30,8 +32,8 @@
     cursor: pointer;
 }
 .search>input{
-    width: 90%;
-    padding: 2px 5px;
+    width: 98%;
+    padding: 2px 2px;
     border: none;
     font-size: 16px;
     outline: none;
@@ -41,6 +43,25 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     gap: 5px;
+}
+.auth_basket>.firstIcon{
+    transition: .3s;
+    cursor: pointer;
+}
+.auth_basket>.secondIcon{
+    transition: .3s;
+    cursor: pointer;
+}
+.auth_basket>.firstIcon:hover{
+    color: #F9B300;
+}
+.auth_basket>.secondIcon:hover{
+    color: #F9B300;
+}
+
+@media (max-width:426px) {
+    .header>.logo>a>.img{
+        width: 70%;
+    }
 }

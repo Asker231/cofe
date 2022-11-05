@@ -4,8 +4,8 @@ import imtree from './assets/cm.png';
 import  imfor from  './assets/ram.png';
 
 export const cardData =[
-    {image:imone,title:"Свежеобжаренный кофе"},
-    {image:imtwo,title:"Чай и кофейные напитки"},
-    {image:imtree,title:"Продукция для вендинга"},
-    {image:imfor,title:"Здоровое питание"},
+    {image:imone,title:"Свежеобжаренный кофе",path:'/catalogCofe'},
+    {image:imtwo,title:"Чай и кофейные напитки",path:'/catalogTee'},
+    {image:imtree,title:"Продукция для вендинга",path:'/catalogVending'},
+    {image:imfor,title:"Здоровое питание",path:'/catalogZdor'},
 ]

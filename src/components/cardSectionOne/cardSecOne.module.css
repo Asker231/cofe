@@ -6,16 +6,16 @@
     align-items: center;
     justify-content:center;
     position: relative;
+    top: 40px;
 }
 .cardSectOne>.cards{
    display: flex;
    flex-direction: row;
    gap: 5px;
-   align-items: baseline;
+   align-items: flex-end;
    width: 100%;
    justify-content: space-around;
 }
-
 .cardSectOne>.vector{
     position: absolute;
     width: 300px;
@@ -23,7 +23,25 @@
     top: 110px;
     left: -10px;
 }
+.cardSectOne>.cards>.card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  transition: .4s;
+  padding: 5px;
+  border-radius: 4px;
+}
+.cardSectOne>.cards>.card:hover{
+    -webkit-box-shadow: 2px 6px 21px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 2px 6px 21px 0px rgba(66, 68, 90, 1);
+    box-shadow: 2px 6px 21px 0px rgba(66, 68, 90, 1);
+}
+
 @media (max-width:670px) {
+    .cardSectOne{
+        top: 60px;
+    }
     .cardSectOne>.cards{
         display: grid;
         grid-template-columns: repeat(1,300px);
