@@ -1,0 +1,24 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    padding: 10px;
+
+    background-color: #fff;
+    transition: .4s;
+    border-radius: 4px;
+
+
+}.card:hover{
+    -webkit-box-shadow: 2px 6px 21px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 2px 6px 21px 0px rgba(66, 68, 90, 1);
+    box-shadow: 2px 6px 21px 0px rgba(66, 68, 90, 1);
+}
+.card>img{
+   width: 90%;
+   
+}

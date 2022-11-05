@@ -1,0 +1,38 @@
+.cardSectOne{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+}
+.cardSectOne>.cards{
+   display: flex;
+   flex-direction: row;
+   gap: 5px;
+   align-items: baseline;
+   width: 100%;
+   justify-content: space-around;
+}
+
+.cardSectOne>.vector{
+    position: absolute;
+    width: 300px;
+    z-index: -2;
+    top: 110px;
+    left: -10px;
+}
+@media (max-width:670px) {
+    .cardSectOne>.cards{
+        display: grid;
+        grid-template-columns: repeat(1,300px);
+        gap: 2px;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardSectOne>.vector{
+        top: 1100px;
+    }
+    
+}
