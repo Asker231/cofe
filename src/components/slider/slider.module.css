@@ -80,8 +80,10 @@
    }
    .left>h1{
     font-size:19px;
+    color: black;
    }
    .left>p{
+    color: black;
     font-size: 15px;
    }
    .left>span{
@@ -91,6 +93,7 @@
     position: absolute;
     z-index: 1;
     top: 10px;
+    right: -5px;
 
    }
 }
