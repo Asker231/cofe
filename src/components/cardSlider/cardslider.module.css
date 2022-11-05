@@ -56,3 +56,13 @@
     }
 
 }
+@media (max-width:378px) {
+    .cardslider>.top>h2{
+        font-size: 18px;
+        text-indent: 8.4em;
+    }.cardslider>.top>p{
+        font-size: 14px;
+        text-indent:4.5em;
+    }
+
+}
