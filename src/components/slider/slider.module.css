@@ -1,13 +1,12 @@
 .slider {
   position: relative;
-  gap: 10px;
+  gap: 5px;
   display: flex;
   align-items: center;
   justify-content:space-around;
   padding: 20px;
   z-index: 3;
   top: 100px;
-
   /*
   при разрешении 481px убрать высоту в 70vmin
   */
@@ -26,13 +25,12 @@
 
 
 .slider > .left {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
    justify-content: center;
    z-index: 10;
-
-  width: 60%;
+   width: 60%;
 }.left>h1{
     /* 
     при разрешении 481px сменить font size
