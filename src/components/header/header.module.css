@@ -25,9 +25,8 @@
     padding: 2px 5px;
     width: 70%;
     border-radius: 10px;
-    -webkit-box-shadow: 4px 8px 21px -5px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 4px 8px 21px -5px rgba(66, 68, 90, 1);
-    box-shadow: 4px 8px 21px -5px rgba(66, 68, 90, 1);
+    border:0.5px solid rgb(63, 63, 63);
+   
 }
 .search>.inplogo{
     width: 32px;

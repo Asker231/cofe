@@ -29,7 +29,8 @@ const LIMIT = -3645;
         <button 
         disabled={left== LIMIT?true:false}
         onClick={()=>setLeft(left=>left-1215)} 
-        className={style.prev} ><ArrowBackIosNewOutlinedIcon style={{color:'#fff',cursor:'pointer'}}/></button>
+        className={style.prev} ><ArrowBackIosNewOutlinedIcon style={{color:'#fff',cursor:'pointer',}}/>
+        </button>
         <div className={style.slider}>
 
           <div style={{transition:'3s',left:`${left}px`}} className={style.sliderlist}>
