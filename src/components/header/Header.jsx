@@ -24,8 +24,8 @@ const Header = () => {
              <input onFocus={()=>setFocus(!focus)}  type="text"/>
         </div>
         <div className={style.auth_basket}>
-            <ShoppingBasketOutlinedIcon className={style.firstIcon} style={{width:"32px",height:"31px"}}/>
-            <AccountCircleOutlinedIcon className={style.secondIcon} style={{width:"32px",height:"31px"}}/>
+           <Link to='/basket'><ShoppingBasketOutlinedIcon className={style.firstIcon} style={{width:"32px",height:"31px"}}/></Link> 
+          <Link><AccountCircleOutlinedIcon className={style.secondIcon} style={{width:"32px",height:"31px"}}/></Link>  
         </div>
     </div>
   )

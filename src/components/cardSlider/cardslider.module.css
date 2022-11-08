@@ -6,6 +6,7 @@
     top: 50px;
     gap: 20px;
     padding-bottom: 40px;
+    font-family: 'Montserrat';
 
 }
 .cardslider>.top{
@@ -152,6 +153,7 @@
     }.cardslider>.top>p{
         font-size: 14px;
         text-indent:13.5em;
+        color: black;
     }
 
 }
@@ -192,6 +194,7 @@
 
 
 }
+
 @media (max-width:320px) {
     .cardslider>.top>h2{
         font-size: 18px;
@@ -199,46 +202,9 @@
     }.cardslider>.top>p{
         
         font-size: 14px;
-        text-indent:10.5em;
-        color: #fff;
+        text-indent:8.5em;
+        color: rgb(6, 6, 6);
         font-weight: bold;
     }
-
-}
-@media (max-width:376px) {
-    .cardslider>.top>h2{
-        font-size: 18px;
-        text-indent: 8.4em;
-    }.cardslider>.top>p{
-        font-size: 14px;
-        text-indent:4.5em;
-    }
-    .cardslider>.btn>.prev{
-        position: absolute;
-        left: 20px;
-        background-color: #F9B300;
-        border: none;
-        padding: 4px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50px; 
-        z-index: 10;
-        border: 0.8px solid #fff;
-    }
-    .cardslider>.btn>.next{
-        position: absolute;
-        right: 20px;
-        background-color: #F9B300;
-        border: none;
-        padding: 4px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50px; 
-        border: 0.8px solid #F9B300;
-    }
-    .cardslider>.btn>.slider{
-        width: 100%;
-    }
-
 
 }

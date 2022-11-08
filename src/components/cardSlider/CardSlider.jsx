@@ -28,7 +28,7 @@ const LIMIT = -3645;
       <div className={style.btn}>
         <button 
         disabled={left== LIMIT?true:false}
-        onClick={()=>setLeft(left=>left-1215)} 
+        onClick={()=>setLeft(0)} 
         className={style.prev} ><ArrowBackIosNewOutlinedIcon style={{color:'#fff',cursor:'pointer',}}/>
         </button>
         <div className={style.slider}>
@@ -44,7 +44,7 @@ const LIMIT = -3645;
         </div>
         <button 
         
-        onClick={()=>setLeft(0)}
+        onClick={()=>setLeft(left=>left-1215)}
          className={style.next}><ArrowForwardIosOutlinedIcon style={{color:'#fff',cursor:'pointer'}}/></button>
       </div>
 

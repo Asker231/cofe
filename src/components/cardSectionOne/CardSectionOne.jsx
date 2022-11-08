@@ -19,7 +19,8 @@ const CardSectionOne = () => {
       card.map((el)=>{
          return <div className={style.card}>
           <CardCategory title={el.title} image={el.image}/>
-          <Link to={el.path}><ButtonVarOne color="white" bcolor="#F9B300" title="купить" /></Link> 
+          <Link to={el.path}><ButtonVarOne w={30}
+           color="white" bcolor="#F9B300" title="купить" /></Link> 
          </div>
          })
             }

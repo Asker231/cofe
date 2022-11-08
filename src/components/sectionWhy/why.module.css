@@ -1,0 +1,74 @@
+.why{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 70px;
+    background-color: #FFF7E1;
+    padding: 20px;
+    clip-path: polygon(100% -459% , 98% 100%, 0 100%, 22% -16%);
+    border-radius: 40px;
+    height: max-content;
+}
+.why>.images{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+.why>.images>img{
+    width:60%;
+    margin: 0 auto;
+    position:relative;
+    left: 150px;
+
+}
+.why>.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.wrap_one{
+ display: flex;
+ flex-direction: row;
+ gap: 16px;
+ align-items: center;
+}
+.wrap_two{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+.wrap_tree{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+.wrap_one>.textone{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.wrap_two>.texttwo{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+.wrap_tree>.texttree{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+@media (max-width:426px) {
+    .why>.images>img{
+        position: relative;
+        width:60%;
+        margin: 0 auto;
+
+        left: 50px;
+    
+    }
+}

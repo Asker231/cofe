@@ -5,6 +5,7 @@ import CatalogPageTee from '../pages/catalogPage/CatalogPageTee.jsx';
 import CatalogVending from '../pages/catalogVending/CatalogVending.jsx';
 import Home from '../pages/Home/Home';
 import CatalogZdo from '../pages/catalogZdo/CatalogZdo.jsx';
+import Basket from '../pages/basketPage/Basket.jsx';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Route path='/catalogCofe' element={<CatalogCofe/>}/>
       <Route path='/catalogVending' element={<CatalogVending/>}/>
       <Route path='/catalogZdor' element={<CatalogZdo/>}/>
+      <Route path='/basket' element={<Basket/>}/>
     </Routes>
     </div>
   );
