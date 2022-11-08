@@ -58,8 +58,8 @@
 .bottomgrid{
     
   display: grid;
-grid-template-columns: 1fr;
-gap: 5px;
+  grid-template-columns: 1fr;
+  gap: 5px;
 }
 .bottomgrid>.texts{
   display: flex;
@@ -70,4 +70,46 @@ gap: 5px;
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+
+@media (max-width:376px) {
+  .middle{
+    display: grid;
+    grid-template-columns: 141px;
+  }
+  .bottomgrid>.texts{
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    gap: 2px;
+  }
+  .middle>img{
+    width: 30%;
+    height: 60px;
+  }
+  .middle>.info>.stars{
+    display: none;
+ 
+}
+}
+@media (max-width:436px) {
+  .middle{
+    display: grid;
+    grid-template-columns: 141px;
+  }
+  .bottomgrid>.texts{
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    gap: 2px;
+  }
+  .middle>img{
+    width: 30%;
+    height: 60px;
+  }
+  .middle>.info>.stars{
+    display: none;
+ 
+}
 }
