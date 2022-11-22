@@ -6,6 +6,7 @@ import CardSectionOne from '../../components/cardSectionOne/CardSectionOne';
 import CardSlider from '../../components/cardSlider/CardSlider';
 import Why from '../../components/sectionWhy/Why';
 import BottomSec from '../../components/botSec/BottomSec';
+import Bottom from '../../components/Bottom/Bottom';
 const Home = () => {
   return (
     <div className={style.home}>
@@ -15,6 +16,7 @@ const Home = () => {
      <CardSlider/>
      <Why/>
      <BottomSec/>
+     <Bottom/>
     </div>
   )
 }

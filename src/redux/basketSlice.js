@@ -7,14 +7,15 @@ const basketSlice = createSlice({
     initialState:{
         arr:[]
     },
-    addcard(state,action){
-      state.arr.push(action.payload);
-      console.log(action.payload);
-
+    reducers:{
+        addcard(state,action){
+     state.arr.push(action.payload);
     },
     removeCard(state,action){
 
     }
+    }
+  
 })
 
 export const {addcard,removeCard} = basketSlice.actions;

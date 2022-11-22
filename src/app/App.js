@@ -6,7 +6,10 @@ import CatalogVending from '../pages/catalogVending/CatalogVending.jsx';
 import Home from '../pages/Home/Home';
 import CatalogZdo from '../pages/catalogZdo/CatalogZdo.jsx';
 import Basket from '../pages/basketPage/Basket.jsx';
+import images from '../components/slider/assets/two.png';
+
 import './App.css';
+import Bottom from '../components/Bottom/Bottom.jsx';
 
 function App() {
   return (
@@ -15,11 +18,12 @@ function App() {
     <Routes>
       <Route path="/" element={ <Home/>}/>
       <Route path="/catalogTee" element={ <CatalogPageTee/>}/>
-      <Route path='/catalogCofe' element={<CatalogCofe/>}/>
+      <Route path='/catalogCofe'  element={<CatalogCofe images={images} title="Свежеобжаренный кофе"/>}/>
       <Route path='/catalogVending' element={<CatalogVending/>}/>
       <Route path='/catalogZdor' element={<CatalogZdo/>}/>
       <Route path='/basket' element={<Basket/>}/>
     </Routes>
+    
     </div>
   );
 }

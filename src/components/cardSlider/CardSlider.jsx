@@ -23,16 +23,13 @@ const LIMIT = -3645;
         <h2>Товары со скидкой</h2>
         <p>Наша компания предлагает покупать товар со скидкой не только в дни распродаж <br />
           или в течение действия ограниченных предложений, но и пользоваться скидками постоянно!</p>
-
       </div>
       <div className={style.btn}>
-        <button 
-        disabled={left== LIMIT?true:false}
+        <button        
         onClick={()=>setLeft(0)} 
         className={style.prev} ><ArrowBackIosNewOutlinedIcon style={{color:'#fff',cursor:'pointer',}}/>
         </button>
         <div className={style.slider}>
-
           <div style={{transition:'3s',left:`${left}px`}} className={style.sliderlist}>
             {
               card.map((el) => {
@@ -40,10 +37,9 @@ const LIMIT = -3645;
               })
             }
           </div>
-
         </div>
         <button 
-        
+         disabled={left == LIMIT?true:false}
         onClick={()=>setLeft(left=>left-1215)}
          className={style.next}><ArrowForwardIosOutlinedIcon style={{color:'#fff',cursor:'pointer'}}/></button>
       </div>

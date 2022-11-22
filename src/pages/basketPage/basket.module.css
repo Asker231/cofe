@@ -1,0 +1,7 @@
+.basket{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    position: relative;
+    top: 100px;
+    padding: 10px;
+}

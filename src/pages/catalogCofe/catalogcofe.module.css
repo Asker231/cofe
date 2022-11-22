@@ -1,0 +1,126 @@
+.catalogcofe{
+   position: relative;
+   top: 90px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+
+}
+.catalogcofe>.wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #F9B300;
+}
+.wrap>h1{
+    color: rgb(254, 252, 252);
+    margin: 0 auto;
+    font-weight: bold;
+    transition: .5s;
+    animation: cofe  linear infinite;
+}
+.wrap>img{
+    width: 60%;
+    
+}
+
+@keyframes cofe {
+    0%{
+        transform: rotateX(180deg);
+    }100%{
+        transform: rotateX(360deg);
+    }
+}
+
+.catalogcofe>.items_block{
+ display: grid;
+ grid-template-columns:300px 1140px;
+ grid-template-areas: "lef rig"
+                       "bot bot";
+ gap: 10px;
+ margin: 0 auto;
+ padding: 10px;
+}
+.catalogcofe>.items_block>.leftsection{
+  grid-area: lef;
+  height: 426px;
+  background-color: #fdfcf8;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+  border-radius: 20px;
+}
+.catalogcofe>.items_block>.rightsection{
+    grid-area: rig;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,263px);
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding: 30px;
+}
+.catalogcofe>.items_block>.botsection{
+    grid-area: bot;
+    height: max-content;
+    padding: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.leftsection>.left{
+    width: 4%;
+    height: 90%;
+    background-color: #F9B300;
+    border-radius: 30px;
+
+}
+.botsection>.bots{
+    text-decoration: none;
+}
+.botsection>.bots{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(149, 149, 149, 0.25);
+    border-radius: 20px;
+    width: 131px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 109px;
+    padding: 10px;
+}.botsection>.bots>img{
+    width: 90%;
+    height: 60%;
+}
+.botsection>a{
+    text-decoration: none;
+    color: black;
+}
+.catalogcofe>.cards{
+    display: grid;
+    grid-template-columns: repeat(4,364px);
+    gap: 5px;
+    position: relative;
+    margin: 0 auto;
+    left: 120px;
+   width: 100%;
+}
+.catalogcofe>.cards:nth-child(all){
+    margin: 0 auto;
+}

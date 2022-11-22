@@ -2,10 +2,17 @@ import ButtonVarOne from "../../subcomponents/button/ButtonVarOne";
 import star from "./assets/Star5.svg";
 import vector from "./assets/Vector.svg";
 import style from "./cardu.module.css";
-
+import { useDispatch } from "react-redux";
+import { addcard } from "../../../redux/basketSlice";
 
 
 const CardU = ({ image, title, text, price, oldPrice }) => {
+  const disp = useDispatch();
+
+
+  const Disp = ()=>{
+    return disp(addcard({image, title, text, price}))
+  }
 
   const stars = [1, 2, 3, 4, 5];
 
@@ -65,7 +72,7 @@ const CardU = ({ image, title, text, price, oldPrice }) => {
           <strong style={{ letterSpacing: "2px" }}>{price}</strong>
         </div>
           
-          <ButtonVarOne  bcolor="#F9B300" color="#fff" title="В корзину" />
+          <ButtonVarOne f={Disp} bcolor="#F9B300" color="#fff" title="В корзину" />
         
       </div>
     </div>
